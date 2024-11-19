@@ -53,7 +53,7 @@
     <section id="coming-soon">
         <h2>Coming Soon</h2>
         <div class="coming-soon-movies">
-            <img src="img1196.ipg" alt="Movie 1 Poster">
+            <img src="img1196.jpg" alt="Movie 1 Poster">
             <img src="img4179.jpg" alt="Movie 2 Poster">
             <img src="img1183.jpg" alt="Movie 3 Poster">
             <p>Check back for updates on the latest movies!</p>
@@ -69,7 +69,11 @@
     <!-- Load Google Maps -->
     <script>
         function initMap() {
+<<<<<<< HEAD
             var cinemaLocation = { lat: 40.730610, lng: -73.935242 }; // Replace with cinema's location
+=======
+            var cinemaLocation = { lat: 40.730610, lng: -73.935242 }; // Replace with your cinema's location
+>>>>>>> a95eab065386d56de5aec09a6109d6acad3bf55e
             var map = new google.maps.Map(document.getElementById('map'), {
                 zoom: 14,
                 center: cinemaLocation
@@ -80,8 +84,15 @@
             });
         }
     </script>
+<<<<<<< HEAD
     <script type="module"
         src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
     </script>
+=======
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
+    <a class="btn btn-forth btn-xs" target="_blank" href="https://goo.gl/maps/mhwjmCyPWbeAaptb9">Location Map</a>
+>>>>>>> a95eab065386d56de5aec09a6109d6acad3bf55e
 </body>
 </html>
