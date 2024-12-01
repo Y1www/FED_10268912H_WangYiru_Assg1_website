@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Seat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="2nd GV logo.png" alt="Golden Village Logo 1">
+        </div>
+        <div class="logo">
+            <img src="GV logo.png" alt="Golden Village Logo 2">
+        </div>
+    </header>
+    <main>
+        <h1>Select Your Seats</h1>
+        <div class="seat-grid">
+            <button class="seat available" onclick="selectSeat(this)">A1</button>
+            <button class="seat available" onclick="selectSeat(this)">A2</button>
+            <button class="seat booked" disabled>A3</button>
+            <button class="seat available" onclick="selectSeat(this)">A4</button>
+            <button class="seat available" onclick="selectSeat(this)">A5</button>
+            <button class="seat available" onclick="selectSeat(this)">A6</button>
+            <button class="seat available" onclick="selectSeat(this)">B1</button>
+            <button class="seat booked" disabled>B2</button>
+            <button class="seat booked" disabled>B3</button>
+            <button class="seat booked" disabled>B4</button>
+            <button class="seat available" onclick="selectSeat(this)">B5</button>
+            <button class="seat available" onclick="selectSeat(this)">B6</button>
+            <button class="seat booked" disabled>C1</button>
+            <button class="seat booked" disabled>C2</button>
+            <button class="seat available" onclick="selectSeat(this)">C3</button>
+            <button class="seat available" onclick="selectSeat(this)">C4</button>
+            <button class="seat available" onclick="selectSeat(this)">C5</button>
+            <button class="seat available" onclick="selectSeat(this)">C6</button>
+        </div>
+        <button onclick="proceedToPayment()">Proceed to Payment</button>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

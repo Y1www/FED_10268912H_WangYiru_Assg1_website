@@ -2,86 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Booking Website</title>
+    <title>Golden Village Cinema</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header Section -->
     <header>
-        <h1>Welcome to MovieTime Booking</h1>
-        <nav>
-            <ul>
-                <li><a href="#booking">Book Tickets</a></li>
-                <li><a href="#coming-soon">Coming Soon</a></li>
-                <li><a href="#location">Cinema Location</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Booking Section -->
-    <section id="booking">
-        <h2>Book Your Movie Tickets</h2>
-        <form>
-            <label for="movie">Choose a movie:</label>
-            <select id="movie" name="movie">
-                <option value="movie1">Movie 1</option>
-                <option value="movie2">Movie 2</option>
-                <option value="movie3">Movie 3</option>
-            </select><br><br>
-
-            <label for="date">Select date:</label>
-            <input type="date" id="date" name="date"><br><br>
-
-            <label for="time">Select time:</label>
-            <select id="time" name="time">
-                <option value="10am">10:00 AM</option>
-                <option value="1pm">1:00 PM</option>
-                <option value="4pm">4:00 PM</option>
-                <option value="7pm">7:00 PM</option>
-            </select><br><br>
-
-            <label for="seats">Number of seats:</label>
-            <input type="number" id="seats" name="seats" min="1" max="10"><br><br>
-
-            <button type="submit">Book Now</button>
-        </form>
-    </section>
-
-    <!-- Coming Soon Section -->
-    <section id="coming-soon">
-        <h2>Coming Soon</h2>
-        <div class="coming-soon-movies">
-            <img src="img1196.jpg" alt="Movie 1 Poster">
-            <img src="img4179.jpg" alt="Movie 2 Poster">
-            <img src="img1183.jpg" alt="Movie 3 Poster">
-            <p>Check back for updates on the latest movies!</p>
+        <div class="logo">
+            <img src="2nd GV logo.png" alt="Golden Village Logo 1">
         </div>
-    </section>
-
-    <!-- Location Section -->
-    <section id="location">
-        <h2>Cinema Location</h2>
-        <div id="map" style="height: 400px; width: 100%;"></div>
-    </section>
-
-    <!-- Load Google Maps -->
-    <script>
-        function initMap() {
-            var cinemaLocation = { lat: 40.730610, lng: -73.935242 }; // Replace with cinema's location
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 14,
-                center: cinemaLocation
-            });
-            var marker = new google.maps.Marker({
-                position: cinemaLocation,
-                map: map
-            });
-        }
-    </script>
-    <script type="module"
-        src="">
-    </script>
+        <div class="logo">
+            <img src="GV logo.png" alt="Golden Village Logo 2">
+        </div>
+    </header>
+    <nav>
+        <ul class="nav-options">
+            <li><a href="now-showing.html">Now Showing</a></li>
+            <li><a href="advance-sales.html">Advance Sales</a></li>
+            <li><a href="coming-soon.html">Coming Soon</a></li>
+            <li><a href="location.html">Location</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Welcome to Golden Village</h1>
+    </main>
 </body>
 </html>
